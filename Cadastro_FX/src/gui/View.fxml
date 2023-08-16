@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
+   <children>
+      <Button fx:id="btCadastrar" layoutX="184.0" layoutY="250.0" mnemonicParsing="false" onAction="#onbtnCadastrarAction" text="CADASTRAR" />
+      <Label layoutX="156.0" layoutY="23.0" prefHeight="25.0" prefWidth="139.0" text="Cadastro Produto">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNome" layoutX="14.0" layoutY="72.0" prefHeight="33.0" prefWidth="172.0" promptText="Nome" />
+      <TextField fx:id="txtCusto" layoutX="254.0" layoutY="72.0" prefHeight="33.0" prefWidth="172.0" promptText="Custo" />
+      <TextField fx:id="txtPreco" layoutX="16.0" layoutY="193.0" prefHeight="33.0" prefWidth="172.0" promptText="Preço" />
+      <ComboBox fx:id="cbbCategoria" layoutX="14.0" layoutY="134.0" prefHeight="25.0" prefWidth="172.0" promptText="Categoria" />
+      <TextField fx:id="txtEstoque" layoutX="253.0" layoutY="134.0" prefHeight="33.0" prefWidth="172.0" promptText="Estoque" />
+   </children>
+</AnchorPane>
