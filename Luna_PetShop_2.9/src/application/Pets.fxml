@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PetsController">
+   <bottom>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="142.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastramento de Pets">
+               <font>
+                  <Font name="Sitka Small Bold" size="30.0" />
+               </font></Text>
+            <TextField fx:id="textNomeP" layoutX="35.0" layoutY="131.0" prefHeight="32.0" prefWidth="226.0" promptText="Nome do Pet" />
+            <TextField fx:id="TextID" layoutX="270.0" layoutY="233.0" prefHeight="31.0" prefWidth="135.0" promptText="Seu endereço ID">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="textRaça" layoutX="270.0" layoutY="184.0" onAction="#getData" prefHeight="32.0" prefWidth="226.0" promptText="Raça" />
+            <ComboBox fx:id="comboBoxEspecie" layoutX="35.0" layoutY="184.0" prefHeight="32.0" prefWidth="226.0" promptText="Espécie" />
+            <Button fx:id="btCadas" layoutX="239.0" layoutY="290.0" mnemonicParsing="false" onAction="#CadastrarButtonAction" prefHeight="44.0" prefWidth="124.0" style="-fx-background-radius: 30;" text="Cadastrar Pet">
+               <font>
+                  <Font name="Sitka Heading" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="229.0" layoutY="342.0" mnemonicParsing="false" onAction="#btNovoAction" prefHeight="44.0" prefWidth="142.0" style="-fx-background-radius: 30;" text="Voltar ao Início">
+               <font>
+                  <Font name="Sitka Heading" size="14.0" />
+               </font>
+            </Button>
+            <DatePicker fx:id="textIdade" layoutX="270.0" layoutY="131.0" onAction="#getData" prefHeight="32.0" prefWidth="166.0" promptText="Data de Nascimento" />
+            <ImageView fitHeight="76.0" fitWidth="117.0" layoutX="45.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cao_logo.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="textDono" layoutX="35.0" layoutY="232.0" prefHeight="32.0" prefWidth="226.0" promptText="Seu dono" />
+            <Label fx:id="LabelData" layoutX="451.0" layoutY="120.0" prefHeight="55.0" prefWidth="135.0" text="(Idade Estimada)" textAlignment="CENTER" textFill="#aeaeae">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

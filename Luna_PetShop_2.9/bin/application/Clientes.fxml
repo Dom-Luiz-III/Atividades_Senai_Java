@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ClientesController">
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="textNome" layoutX="75.0" layoutY="122.0" prefHeight="32.0" prefWidth="226.0" promptText="Nome Completo" />
+            <TextField fx:id="textEnd" layoutX="75.0" layoutY="184.0" prefHeight="32.0" prefWidth="226.0" promptText="Endereço" />
+            <TextField fx:id="textEmail" layoutX="310.0" layoutY="122.0" prefHeight="32.0" prefWidth="226.0" promptText="Email" />
+            <TextField fx:id="textTel" layoutX="311.0" layoutY="184.0" prefHeight="32.0" prefWidth="226.0" promptText="Telefone" />
+            <TextField fx:id="textId" alignment="CENTER" layoutX="73.0" layoutY="238.0" prefHeight="31.0" prefWidth="135.0" promptText="Seu endereço ID">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <Text layoutX="141.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastramento do Cliente" textAlignment="CENTER">
+               <font>
+                  <Font name="Sitka Small Bold" size="30.0" />
+               </font>
+            </Text>
+            <Button fx:id="bttCada" layoutX="238.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="44.0" prefWidth="124.0" style="-fx-background-radius: 30;" text="Cadastrar">
+               <font>
+                  <Font name="Sitka Small Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="94.0" layoutY="296.0" mnemonicParsing="false" onAction="#btNovoAction2" prefHeight="44.0" prefWidth="124.0" style="-fx-background-radius: 30;" text="Voltar">
+               <font>
+                  <Font name="Sitka Small Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="385.0" layoutY="296.0" mnemonicParsing="false" onAction="#btNovoAction" prefHeight="44.0" prefWidth="124.0" style="-fx-background-radius: 30;" text="Continuar">
+               <font>
+                  <Font name="Sitka Small Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="69.0" fitWidth="69.0" layoutX="53.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cliente_logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
