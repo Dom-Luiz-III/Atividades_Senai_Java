@@ -1,9 +1,7 @@
-# Atividades_Senai_Java
-Atividades feitas durantes as aulas de Orientação a Objeto com o professor Phillipe no Curso Técnico de ADS pelo SENAI. Códigos feitos durante o primeiro semestre de 2023
+#Descrição:
 
 Todos esses programas foram feitos utilizando o Eclipse IDE tendo o Java LTS 17.0.8 edição Zulu, com alguns programas como o Luna Petshop tendo o JavaFX junto com o pacote.
 Caso queira utilizá-los recomendo a instalação de ambos no computador.
-
 
 Instalação do Eclipse IDE (acredito que não fará diferença qual versão do Eclipse você tenha instalado):
 https://www.eclipse.org/downloads/
