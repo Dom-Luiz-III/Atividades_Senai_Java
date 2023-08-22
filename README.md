@@ -1,4 +1,4 @@
-#Descrição:
+# Descrição:
 
 Todos esses programas foram feitos utilizando o Eclipse IDE tendo o Java LTS 17.0.8 edição Zulu, com alguns programas como o Luna Petshop tendo o JavaFX junto com o pacote.
 Caso queira utilizá-los recomendo a instalação de ambos no computador.
